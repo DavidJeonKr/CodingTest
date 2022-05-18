@@ -1,8 +1,8 @@
-public class Solution0 {
+public class Solution_00 {
     public static void main(String[] args) {
 
 //        System.out.println(solution(12));
-        Solusion1 s1 = new Solusion1();
+        Solusion_01 s1 = new Solusion_01();
         System.out.println(s1.solution(10)); //41
     }
 

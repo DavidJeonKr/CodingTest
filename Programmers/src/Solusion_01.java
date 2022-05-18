@@ -15,7 +15,7 @@
 //
 //        제한사항
 //        n은 500,000,000이하의 자연수 입니다.
-public class Solusion1 {
+public class Solusion_01 {
         public String solution(int n) {
             String[] numbers = {"4", "1", "2"};
 
