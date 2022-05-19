@@ -1,31 +1,4 @@
-public class Solution_00 {
-    public static void main(String[] args) {
-
-        //Solution 00
-//      System.out.println(solution(12));
-//      Solution 01
-//      Solusion_01 s1 = new Solusion_01();
-//      System.out.println(s1.solution(10)); //41
-
-//      Solution 03
-        Solution_03 s3 = new Solution_03();
-        System.out.println(s3.solution("...!@BaT#*..y.abcdefghijklm"));
-    }
-
-        //약수의 합
-        public static int solution(int n ) {
-            int answer = 0;
-
-            for (int i = 1; i <=n; i++) {
-                if (n % i == 0) {
-                    answer += i;
-                }
-            }
-            return answer;
-        }
-
-
-}
+import java.util.Locale;
 
 /* 신규 아이디 추천
         문제 설명
@@ -89,5 +62,32 @@ public class Solution_00 {
         입출력 예에 대한 설명
 
  */
+public class Solution_03 {
+    public String solution(String new_id) {
+        String answer = "";
+        //1단게 lowerWWWW
+        String testcase1 = new_id.toLowerCase();
+        System.out.println("1단계 -> " + testcase1);
+        //2단계 문자 제거
+        String testcase2 = testcase1.replace("!", "").replace("@","").
+                replaceAll("#","").replace("*","");
+        System.out.println("2단계 -> " + testcase2);
+        //3단계 ... -> .. -> .
+        String testcase3 = testcase2.replace("...",".").replace("..",".");
+        System.out.println("3단계 -> " + testcase3);
+        //4단계 아이디 처음에 위치한 "."가 제거되었습니다
+        String testcase4 = testcase3.replaceFirst(".","");
+        System.out.println("4단계 -> " + testcase4);
+        //5단계 아이디 빈 문자일이 아니므로 변화가 없습니다.
+        if(testcase4.equals("")) testcase4 = "a";
+        System.out.println("5단계 => " + testcase4);
+        //6단계
+        String testcase5 = "";
+        if(testcase4.length() > 16) {
+            testcase5 = testcase4.substring(0,16);
+        }
+        System.out.println(testcase5.length());
+        return answer;
+    }
 
-
+}
