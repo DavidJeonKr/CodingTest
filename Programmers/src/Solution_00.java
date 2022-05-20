@@ -8,8 +8,14 @@ public class Solution_00 {
 //      System.out.println(s1.solution(10)); //41
 
 //      Solution 03
-        Solution_03 s3 = new Solution_03();
-        System.out.println(s3.solution("...!@BaT#*..y.abcdefghijklm"));
+//        Solution_03 s3 = new Solution_03();
+//        System.out.println(s3.solution("...!@BaT#*..y.abcdefghijklm"));
+
+        //Solution 04
+        Solution_04 s4 = new Solution_04();
+        String[] participant = {"leo", "kiki", "eden"};
+        String[] completion = {"eden", "kiki"};
+        System.out.println(s4.solution(participant, completion));
     }
 
         //약수의 합

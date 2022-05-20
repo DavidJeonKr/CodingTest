@@ -66,6 +66,7 @@ public class Solution_03 {
     public String solution(String new_id) {
         String answer = "";
         //1단게 lowerWWWW
+        System.out.println("0단계 -> " + new_id);
         String testcase1 = new_id.toLowerCase();
         System.out.println("1단계 -> " + testcase1);
         //2단계 문자 제거
@@ -85,8 +86,19 @@ public class Solution_03 {
         String testcase5 = "";
         if(testcase4.length() > 16) {
             testcase5 = testcase4.substring(0,16);
+            System.out.println("substring 0-16: "+testcase5);
+            String testcase6 = testcase5;
+            if(testcase5.substring(15,16).equals(".")) {
+                testcase6 = testcase5.substring(0, 15);
+            }
+            System.out.println("6단계 -> " + testcase6);
+
+
+
+//            System.out.println("7단계 -> " + );
+
         }
-        System.out.println(testcase5.length());
+
         return answer;
     }
 
