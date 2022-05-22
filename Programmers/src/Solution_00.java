@@ -12,10 +12,14 @@ public class Solution_00 {
 //        System.out.println(s3.solution("...!@BaT#*..y.abcdefghijklm"));
 
         //Solution 04
-        Solution_04 s4 = new Solution_04();
-        String[] participant = {"leo", "kiki", "eden"};
-        String[] completion = {"eden", "kiki"};
-        System.out.println(s4.solution(participant, completion));
+//        Solution_04 s4 = new Solution_04();
+//        String[] participant = {"leo", "kiki", "eden"};
+//        String[] completion = {"eden", "kiki"};
+//        System.out.println(s4.solution(participant, completion));
+
+        //Solution 05
+        Solution_05 s5 = new Solution_05();
+        System.out.println(s5.solution("one4seveneight"));
     }
 
         //약수의 합
