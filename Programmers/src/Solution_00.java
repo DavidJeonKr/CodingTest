@@ -18,8 +18,13 @@ public class Solution_00 {
 //        System.out.println(s4.solution(participant, completion));
 
         //Solution 05
-        Solution_05 s5 = new Solution_05();
-        System.out.println(s5.solution("one4seveneight"));
+//        Solution_05 s5 = new Solution_05();
+//        System.out.println(s5.solution("one4seveneight"));
+
+        //Solution 06
+        Solution_06 s6 = new Solution_06();
+        System.out.println(s6.solution(45));
+
     }
 
         //약수의 합
