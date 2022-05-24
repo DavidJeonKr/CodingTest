@@ -26,8 +26,26 @@ public class Solution_00 {
 //        System.out.println(s6.solution(45));
 
         //Solution 07
-        Solution_07 s7 = new Solution_07();
-        System.out.println(s7.solution("1234"));
+//        Solution_07 s7 = new Solution_07();
+//        System.out.println(s7.solution("1234"));
+
+        //Solution 08
+//        Solution_08 s8 = new Solution_08();
+//        System.out.println(s8.solution("pPoooyY"));
+//        System.out.println(s8.solution("Pyy"));
+
+        //Solution 09
+//        Solution_09 s9 = new Solution_09();
+//        int numbers[] = {1,2,3,4,6,7,8,0}; // result = 14
+//        int numbers1[] = {5,8,4,0,6,7,9}; // result = 6
+//        System.out.println(s9.solution(numbers));
+//        System.out.println(s9.solution(numbers1));
+
+        //Solution 10
+        Solution_10 s10 = new Solution_10();
+        int numbers[] = {1, 3, 4, 5, 8, 2, 1, 4, 5, 9, 5};
+        String hand = "right"; //result = "LRLLLRLLRRL"
+        System.out.println(s10.solution(numbers,hand));
 
     }
 
