@@ -22,8 +22,12 @@ public class Solution_00 {
 //        System.out.println(s5.solution("one4seveneight"));
 
         //Solution 06
-        Solution_06 s6 = new Solution_06();
-        System.out.println(s6.solution(45));
+//        Solution_06 s6 = new Solution_06();
+//        System.out.println(s6.solution(45));
+
+        //Solution 07
+        Solution_07 s7 = new Solution_07();
+        System.out.println(s7.solution("1234"));
 
     }
 
