@@ -42,11 +42,19 @@ public class Solution_00 {
 //        System.out.println(s9.solution(numbers1));
 
         //Solution 10
-        Solution_10 s10 = new Solution_10();
-        int numbers[] = {1, 3, 4, 5, 8, 2, 1, 4, 5, 9, 5};
-        String hand = "right"; //result = "LRLLLRLLRRL"
-        System.out.println(s10.solution(numbers,hand));
+//        Solution_10 s10 = new Solution_10();
+//        int numbers[] = {1, 3, 4, 5, 8, 2, 1, 4, 5, 9, 5};
+//        String hand = "right"; //result = "LRLLLRLLRRL"
+//        System.out.println(s10.solution(numbers,hand));
 
+        //Solution 11
+//        Solution_11 s11 = new Solution_11();
+//        System.out.println(s11.solution(12345));
+
+        //Solution 12
+        Solution_12 s12 = new Solution_12();
+        System.out.println(s12.solution(123));
+        System.out.println(s12.solution(987));
     }
 
         //약수의 합
