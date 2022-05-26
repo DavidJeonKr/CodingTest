@@ -52,9 +52,23 @@ public class Solution_00 {
 //        System.out.println(s11.solution(12345));
 
         //Solution 12
-        Solution_12 s12 = new Solution_12();
-        System.out.println(s12.solution(123));
-        System.out.println(s12.solution(987));
+//        Solution_12 s12 = new Solution_12();
+//        System.out.println(s12.solution(123));
+//        System.out.println(s12.solution(987));
+
+        //Solution 13
+//        Solution_13 s13 = new Solution_13();
+//        int[] d = {1,3,2,5,4};
+//        int[] d1 = {2,2,3,3};
+//        int budget = 9; // result = 3
+//        int budget1 = 10; //result = 4
+//        System.out.println(s13.solution(d, budget));
+//        System.out.println(s13.solution(d1, budget1));
+
+        //Solution 14
+        Solution_14 s14 = new Solution_14();
+        System.out.println(s14.solution("try hello world"));
+        // result = "TrY HeLlO WoRlD";
     }
 
         //약수의 합
