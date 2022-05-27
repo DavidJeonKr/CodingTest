@@ -7,17 +7,23 @@ public class Solution_14 {
         String answer = "";
         String[] str = s.split(" ");
         String[] temp = {};
+        int idx = 0;
         String up = "";
+
         //
         for (String word: str) {
-            temp = word.split("");
-            for (int i = 0; i <= temp.length; i+=2) {
-                temp[i].toUpperCase();
-                }
-            for (String result : temp) {
-                answer += result;
+            temp = word.split(""); // temp t , r , y
+            if(idx % 2 == 0) {
+                temp[idx] = temp[idx].toUpperCase();
+                idx++;
+            } else if(idx % 2 == 1) {
+                temp[idx] = temp[idx].toLowerCase();
+                idx++;
+            } else if () {
+
             }
             answer += " ";
+            idx++;
         }
 
         return answer;
