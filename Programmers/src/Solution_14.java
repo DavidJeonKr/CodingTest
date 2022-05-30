@@ -19,9 +19,8 @@ public class Solution_14 {
             } else if(idx % 2 == 1) {
                 temp[idx] = temp[idx].toLowerCase();
                 idx++;
-            } else if () {
-
             }
+
             answer += " ";
             idx++;
         }

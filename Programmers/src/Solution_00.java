@@ -66,9 +66,23 @@ public class Solution_00 {
 //        System.out.println(s13.solution(d1, budget1));
 
         //Solution 14
-        Solution_14 s14 = new Solution_14();
-        System.out.println(s14.solution("try hello world"));
+//        Solution_14 s14 = new Solution_14();
+//        System.out.println(s14.solution("try hello world"));
         // result = "TrY HeLlO WoRlD";
+
+        //Solution 15
+//         Solution_15 s15 = new Solution_15();
+//         int[] num = {3,0,1};
+//        System.out.println(s15.missingNumber(num));
+        //Solution 16
+
+//        Solution_16 s16 = new Solution_16();
+//        String[] word = {"abcw","baz","foo","bar","xtfn","abcdef"};
+//        System.out.println(s16.maxProduct(word));
+
+        Solution_17 s17 = new Solution_17();
+        int[] arr = {1,1,0,1,1,1};
+        System.out.println(s17.findMaxConsecutiveOnes(arr));
     }
 
         //약수의 합
