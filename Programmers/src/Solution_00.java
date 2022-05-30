@@ -80,9 +80,25 @@ public class Solution_00 {
 //        String[] word = {"abcw","baz","foo","bar","xtfn","abcdef"};
 //        System.out.println(s16.maxProduct(word));
 
-        Solution_17 s17 = new Solution_17();
-        int[] arr = {1,1,0,1,1,1};
-        System.out.println(s17.findMaxConsecutiveOnes(arr));
+//        Solution_17 s17 = new Solution_17();
+//        int[] arr = {1,1,0,1,1,1};
+//        System.out.println(s17.findMaxConsecutiveOnes(arr));
+
+//        Solution_18 s18 = new Solution_18();
+//        int[] array = {1, 5, 2, 6, 3, 7, 4};
+//        int[][] commands = {{2, 5, 3},{4, 4, 1},{1, 7, 3}};
+//        System.out.println(s18.solution(array, commands));
+//
+//        Solution_19 s19 = new Solution_19();
+//        int[] arr = {4,3,2,1};
+//        System.out.println(s19.solution(arr));
+
+        Solution_20 s20 = new Solution_20();
+        String[] strings = {"sun", "bed", "car"};
+        int n = 1;
+        System.out.println(s20.solution(strings, n));
+
+
     }
 
         //약수의 합

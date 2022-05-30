@@ -25,6 +25,7 @@ public class Solution_14 {
             idx++;
         }
 
+
         return answer;
     }
 }
