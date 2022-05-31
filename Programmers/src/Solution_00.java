@@ -93,11 +93,22 @@ public class Solution_00 {
 //        int[] arr = {4,3,2,1};
 //        System.out.println(s19.solution(arr));
 
-        Solution_20 s20 = new Solution_20();
-        String[] strings = {"sun", "bed", "car"};
-        int n = 1;
-        System.out.println(s20.solution(strings, n));
+//        Solution_20 s20 = new Solution_20();
+//        String[] strings = {"sun", "bed", "car"};
+//        int n = 1;
+//        System.out.println(s20.solution(strings, n));
 
+//        String[] record = new String[] {"Enter uid1234 Muzi", "Enter uid4567 Prodo","Leave uid1234",
+//                "Enter uid1234 Prodo","Change uid4567 Ryan"};
+//        Solution_21 s21 = new Solution_21();
+//        for (String s: s21.solution(record)) {
+//            System.out.println(s);
+//        }
+
+        Solution_21 s21 = new Solution_21();
+        int[][] board = {{0,0,0,0,0},{0,0,1,0,3},{0,2,5,0,1},{4,2,4,4,2},{3,5,1,3,1}};
+        int[] moves = {1,5,3,5,1,2,1,4};
+        System.out.println();
 
     }
 
