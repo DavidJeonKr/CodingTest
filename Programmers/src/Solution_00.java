@@ -115,9 +115,12 @@ public class Solution_00 {
 //        boolean[] sings = {true, false, true};
 //        System.out.println(s23.solution(absolutes,sings));
 
-        Solution_24 s24 = new Solution_24();
-        int[] numbers = {2,1,3,4,1};
-        System.out.println(s24.solution(numbers));
+//        Solution_24 s24 = new Solution_24();
+//        int[] numbers = {2,1,3,4,1};
+//        System.out.println(s24.solution(numbers));
+
+        Solution_25 s25 = new Solution_25();
+        s25.test_case();
     }
 
         //약수의 합
