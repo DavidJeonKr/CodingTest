@@ -1,7 +1,9 @@
 //전화번호 목록
 
 
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 
 public class Solution_25 {
@@ -12,12 +14,19 @@ public class Solution_25 {
         // return : false
         boolean answer = true;
 
-        Set<String> hashSet = new HashSet<>();
+        Map<Object, Object> map = new HashMap<>();
 
-        for (String str: phone_book) {
-            hashSet.add(str);
+        for (String s: phone_book) {
+            map.put(s, 1);
         }
-        if(hashSet.contains(phone_book[0])) answer = false;
+
+        for (String s: phone_book) {
+            for (int i = 0; i < s.length(); i++) {
+                String prefix = s.substring(0, i);
+                if(map.containsKey(prefix)) answer = false;
+            }
+        }
+
         return answer;
     }
 
