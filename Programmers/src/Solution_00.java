@@ -119,8 +119,16 @@ public class Solution_00 {
 //        int[] numbers = {2,1,3,4,1};
 //        System.out.println(s24.solution(numbers));
 
-        Solution_25 s25 = new Solution_25();
-        s25.test_case();
+//        Solution_25 s25 = new Solution_25();
+//        s25.test_case();
+
+//        Solution_26 s26 = new Solution_26();
+//        s26.testcase();
+
+        Solution_27 s27 = new Solution_27();
+        s27.testcase();
+
+
     }
 
         //약수의 합
