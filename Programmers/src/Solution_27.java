@@ -76,6 +76,46 @@ public class Solution_27 {
         return true;
     }
 
+    public String solution(String s) {
+        String answer = "";
+
+        if(s.length()%2 == 0) { //짝수
+            answer = s.substring(s.length()/2-1, s.length()/2+1);
+        } else { // 홀수
+            answer = s.substring(s.length()/2, s.length()/2+1);
+        }
+        return answer;
+    }
+
+    //행렬의 덧셈
+    public int[][] solution(int[][] arr1, int[][] arr2) {
+        int[][] answer = new int[arr1.length][arr1[0].length];
+        //1 2   3 4    4 6
+        //2 3   5 6    7 9
+
+        for (int i = 0; i < arr1.length; i++) {
+            for (int j = 0; j < arr1[0].length; j++) {
+                answer[i][j] = arr1[i][j] + arr2[i][j];
+            }
+        }
+        return answer;
+
+    }
+
+    // x만큼 간격이 있는 n개의 숫자
+    public long[] solution(int x, int n) {
+        long[] answer = new long[n];
+        long num = x;
+        for (int i = 0; i < answer.length; i++) {
+            answer[i] = num; // answer[0] = answer[0] + x;
+            num += x;
+            System.out.println(answer[i]);
+        }
+
+
+        return answer;
+    }
+
 
     public void testcase() {
 
@@ -84,11 +124,31 @@ public class Solution_27 {
 //        int[] nums2 = {2,5,6};
 //        int n = 3;
 //        merge(nums1,m,nums2, n);
-        int[] nums = {1,2,3,4};
+
+
+//        int[] nums = {1,2,3,4};
         // result = 1
-        int[] nums1 = {1,2,7,6,4};
-        System.out.println(solution(nums));
-        System.out.println(solution(nums1));
+//        int[] nums1 = {1,2,7,6,4};
+//        System.out.println(solution(nums));
+//        System.out.println(solution(nums1));
+
+//        String s = "abcde";
+//        String s1 = "qwer";
+//        System.out.println(solution(s));
+//        System.out.println(solution(s1));
+
+//        int[][] arr1 = {{1,2}, {2,3}};
+//        int[][] arr2 = {{3,4}, {5,6}};
+//
+//        int[][] arr3 = {{1}, {2}};
+//        int[][] arr4 = {{3}, {4}};
+
+
+
+//        System.out.println(solution(arr1,arr2));
+        //System.out.println(solution(arr3,arr4));
+        int x = 2,  n = 5;
+        System.out.println(solution(x,n));
 
 
 
