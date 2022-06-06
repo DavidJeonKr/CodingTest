@@ -109,6 +109,7 @@ public class Solution_27 {
         for (int i = 0; i < answer.length; i++) {
             answer[i] = num; // answer[0] = answer[0] + x;
             num += x;
+            //1
             System.out.println(answer[i]);
         }
 
