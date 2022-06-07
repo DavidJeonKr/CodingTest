@@ -125,9 +125,11 @@ public class Solution_00 {
 //        Solution_26 s26 = new Solution_26();
 //        s26.testcase();
 
-        Solution_27 s27 = new Solution_27();
-        s27.testcase();
+//        Solution_27 s27 = new Solution_27();
+//        s27.testcase();
 
+        Solution_28 s28 = new Solution_28();
+        s28.testcase();
 
     }
 
