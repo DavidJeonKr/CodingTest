@@ -9,7 +9,7 @@ public class Solution_28 {
 
             }
             System.out.println("nums: " + nums[i]);
-            //123
+            //123123
         }
 
         return 0;
