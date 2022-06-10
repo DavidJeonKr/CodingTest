@@ -47,7 +47,7 @@ public class Solution_28 {
     // 경우의 수
     public int solution(String nums) {
 
-        return 0;
+        return 1;
     }
 
     public void testcase() {
