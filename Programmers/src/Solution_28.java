@@ -1,18 +1,37 @@
+import java.util.*;
+
 //Remove Element
 public class Solution_28 {
     public int removeElement(int[] nums, int val) {
-        int[] answer = new int[nums.length];
-
+        int index= 0;
 
         for (int i = 0; i < nums.length; i++) {
-            if(nums[i] == val) {
-
-            }
-            System.out.println("nums: " + nums[i]);
-            //123123
+            if(nums[i] != val) nums[index++] = nums[i];
         }
 
-        return 0;
+        return index;
+    }
+    //remove Duplicates from Sorted Array
+    public int removeDuplicates(int[] nums) {
+
+        int index = 1;
+
+        for (int i = 0; i < nums.length -1 ; i++) {
+            if(nums[i] != nums[i +1]) {
+                nums[index++] = nums[i+1];
+            }
+        }
+
+        return index;
+    }
+
+    //Check If N and Its Double Exist
+    public boolean checkIfExist(int[] arr) {
+
+        ArrayList<int[]> list = new ArrayList<>(Arrays.asList(arr));
+
+
+        return false;
     }
     //부족한 금액 계산하기 - 프로그래머스
     public long solution(int price, int money, int count) {
@@ -40,5 +59,10 @@ public class Solution_28 {
         //System.out.println(solution(3,20,4));
 
         solution("XX0220051234567890X");
+//        int[] nums = {1,1,2};
+//        System.out.println(removeDuplicates(nums));
+
+        int[] arr = {10,2,5,3};
+        System.out.println(checkIfExist(arr));
     }
 }
