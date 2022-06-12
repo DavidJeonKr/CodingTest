@@ -27,10 +27,12 @@ public class Solution_28 {
 
     //Check If N and Its Double Exist
     public boolean checkIfExist(int[] arr) {
-
-        ArrayList<int[]> list = new ArrayList<>(Arrays.asList(arr));
-
-
+        //10 2 5 3
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i+1; j < arr.length; j++) {
+                if(arr[i] == 2*arr[j] || arr[j] == 2*arr[i]) return true;
+            }
+        }
         return false;
     }
     //부족한 금액 계산하기 - 프로그래머스
