@@ -51,6 +51,30 @@ public class Solution_28 {
 
         return 1;
     }
+    //  Valid Mountain Array
+    public boolean validMountainArray(int[] arr) {
+        if(arr.length < 3) return false;
+
+        boolean answer = false;
+
+        int start = 0;
+        int end = arr.length-1;
+
+        while(start < end) {
+            if(arr[start+1] > arr[start]) {
+                start++;
+            } else if(arr[end-1] > arr[end]) {
+                end--;
+            } else {
+                break;
+            }
+        }
+
+
+        answer = start != 0 && end != arr.length-1 && start == end;
+        return answer;
+    }
+
 
     public void testcase() {
 //        int[] nums = {3,2,2,3};
@@ -60,11 +84,18 @@ public class Solution_28 {
         //결과값 10
         //System.out.println(solution(3,20,4));
 
-        solution("XX0220051234567890X");
+//        solution("XX0220051234567890X");
 //        int[] nums = {1,1,2};
 //        System.out.println(removeDuplicates(nums));
 
-        int[] arr = {10,2,5,3};
-        System.out.println(checkIfExist(arr));
+//        int[] arr = {10,2,5,3};
+//        System.out.println(checkIfExist(arr));
+
+        int[] arr = {2,1};
+        int[] arr1 = {3,5,5};
+        int[] arr2 = {0,3,2,1};
+        System.out.println(validMountainArray(arr));
+        System.out.println(validMountainArray(arr1));
+        System.out.println(validMountainArray(arr2));
     }
 }

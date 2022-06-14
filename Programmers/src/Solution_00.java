@@ -128,9 +128,11 @@ public class Solution_00 {
 //        Solution_27 s27 = new Solution_27();
 //        s27.testcase();
 
-        Solution_28 s28 = new Solution_28();
-        s28.testcase();
+//        Solution_28 s28 = new Solution_28();
+//        s28.testcase();
 
+        Solution_29 s29  = new Solution_29();
+        s29.testcase();
     }
 
         //약수의 합
