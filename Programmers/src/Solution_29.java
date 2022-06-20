@@ -57,6 +57,30 @@ public class Solution_29 {
         }
         return answer;
     }
+    // 서울에서 김서방 찾기 - 프로그래머스
+    public String solution(String[] seoul) {
+        String answer = "";
+
+        for (int i = 0; i < seoul.length; i++) {
+            if(seoul[i].equals("Kim")) answer = "김서방은 " + i + "에 있다";
+        }
+        // int x = Arrays.asList(seoul).indexOf("Kim");
+
+        return answer;
+    }
+    // 최대공약수와 최소공배수
+    public int[] solution(int n, int m) {
+        int[] answer = {};
+        //3 12
+        //유클리드 호제법
+        int min = n > m ? n : m;
+
+
+
+
+
+        return answer;
+    }
 
 
 
@@ -72,9 +96,15 @@ public class Solution_29 {
 //        System.out.println(solution(n));
 //        System.out.println(solution(n1));
 
-        int[] arr = {1,1,3,3,0,1,1};
-        int[] arr1 = {4,4,3,3};
-        System.out.println(solution29(arr));
-        System.out.println(solution29(arr1));
+//        int[] arr = {1,1,3,3,0,1,1};
+//        int[] arr1 = {4,4,3,3};
+//        System.out.println(solution29(arr));
+//        System.out.println(solution29(arr1));
+
+//        String[] seoul = {"Jane", "Kim"};
+//        System.out.println(solution(seoul));
+
+        System.out.println(solution(3,12));
+        System.out.println(solution(2,5));
     }
 }
